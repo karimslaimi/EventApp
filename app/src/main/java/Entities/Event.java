@@ -42,8 +42,12 @@ public class Event {
     public String University;
 
 
-    @SerializedName("idEvent")
+    @SerializedName("designation")
     public String theme ;
+
+    @SerializedName("adminid")
+    public int admin ;
+
 
 
 }
