@@ -1,6 +1,6 @@
 package Services;
 
-import java.util.List;
+import java.util.*;
 
 import Entities.Event;
 import retrofit2.Call;
@@ -9,7 +9,7 @@ import retrofit2.http.Query;
 
 public interface EventServices {
 
-    @GET("")
+    @GET("GetEvents")
     Call<List<Event>> findAll();
 
     @GET("/{id}")
